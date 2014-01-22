@@ -9,22 +9,15 @@
 #import "DSSAppDelegate.h"
 #import "DSSCoordinateFinder.h"
 
-
 @interface DSSAppDelegate ()
-
 @property (strong,nonatomic) DSSCoordinateFinder *coordinateFinder;
-
 @end
-
-
 
 @implementation DSSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch
-    
     
     //code to grab coordinates here
     self.coordinateFinder = [[DSSCoordinateFinder alloc] init];

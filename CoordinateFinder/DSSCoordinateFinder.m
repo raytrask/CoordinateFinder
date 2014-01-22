@@ -17,7 +17,6 @@ const CGFloat CoordinatesFinderDefaultMinimumHorizontalAccuracy = 500.0f;
 @property (assign,nonatomic) CGFloat minimumAccuracy;
 @end
 
-
 @implementation DSSCoordinateFinder
 
 - (id) init{

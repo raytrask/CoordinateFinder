@@ -9,10 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-
 @interface DSSCoordinateFinder : NSObject <CLLocationManagerDelegate>
-
-- (void) hello;
 
 - (void) findLocationWithLocationAccuracy: (CLLocationAccuracy )desiredAccuracy minimumHorizontalAccuracy: (CGFloat) accuracyRadiusInMeters completion:(void(^)(CLLocation *myLocation, NSError *error))callback;
 
